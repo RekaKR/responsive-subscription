@@ -1,10 +1,16 @@
 .fullPage {
-  width: 375px;
+  width: 98%;
+  min-width: 375px;
+  max-width: 1440px;
+  font-family: "Karla", sans-serif;
 }
-@media screen and (min-width: 1440px) {
-  .fullPage {
-    width: 1440px;
-  }
+.fullPage h1 {
+  font-weight: 700;
+}
+.fullPage h2,
+.fullPage p {
+  font-weight: 400;
+  font-size: 16px;
 }
 .fullPage .subscription {
   color: #98a6bd;
@@ -16,15 +22,12 @@
   background-color: #c0df34;
   outline: none;
 }
+.fullPage .right {
+  background-color: #2ab2af;
+  opacity: 80%;
+}
 .fullPage .right p {
   color: #e5eff5;
 }
-
-/*font-family: 'Karla', sans-serif;
-font-weight: 400-700;*/
-/*
-### Body Copy
-- Font size: 16px
-*/
 
 /*# sourceMappingURL=App.css.map */
