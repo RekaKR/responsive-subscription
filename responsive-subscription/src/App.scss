@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+.fullPage {
+  width: 100%;
+  min-width: 375px;
+  max-width: 1440px;
+
+  h1 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+  }
+  
+  h2,
+  p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .subscription {
+    color: $gBlue;
+  }
+
+  .left {
+    background-color: $cyan;
+    
+    button {
+      background-color: $bYellow;
+      outline: none;
+    }
+  }
+  
+  .right {
+    p {
+      color: $lightGray;
+    }
+  }
+}
