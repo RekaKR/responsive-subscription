@@ -1,17 +1,24 @@
 @use 'variables' as *;
+@use 'reset';
 
 .fullPage {
-  width: 98%;
-  min-width: 375px;
+  width: 85%;
   max-width: 1440px;
+  margin: auto;
   font-family: 'Karla', sans-serif;
 
   h1 {
+    color: $sideBackgroundC;
     font-weight: 700;
   }
 
-  h2,
+  h2 {
+    color: $buttonC;
+    font-weight: 700;
+  }
+
   p {
+    color: $lightGray;
     font-weight: 400;
     font-size: 16px;
   }
@@ -20,21 +27,43 @@
     color: $gBlue;
   }
 
+ .container {
+//   display: flex;
+//   flex-wrap: wrap;
+
   .left {
-    background-color: $cyan;
+    background-color: $sideBackgroundC;
     
     button {
-      background-color: $bYellow;
+      background-color: $buttonC;
       outline: none;
     }
   }
   
   .right {
-    background-color: $cyan;
+    background-color: $sideBackgroundC;
     opacity: 80%;
+  }
+ }
+}
 
-    p {
-      color: $lightGray;
+
+
+form {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  input {
+    width: 300px;
+    height: 25px;
+    border-bottom: 1px solid #000000;
+  }
+
+  p {
+    span {
+      font-style: bold;
     }
   }
 }

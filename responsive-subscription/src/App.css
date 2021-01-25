@@ -1,33 +1,64 @@
+*,
+body,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  background: transparent;
+  border: none;
+}
+
 .fullPage {
-  width: 98%;
-  min-width: 375px;
+  width: 85%;
   max-width: 1440px;
+  margin: auto;
   font-family: "Karla", sans-serif;
 }
 .fullPage h1 {
+  color: #2ab2af;
   font-weight: 700;
 }
-.fullPage h2,
+.fullPage h2 {
+  color: #c0df34;
+  font-weight: 700;
+}
 .fullPage p {
+  color: #e5eff5;
   font-weight: 400;
   font-size: 16px;
 }
 .fullPage .subscription {
   color: #98a6bd;
 }
-.fullPage .left {
+.fullPage .container .left {
   background-color: #2ab2af;
 }
-.fullPage .left button {
+.fullPage .container .left button {
   background-color: #c0df34;
   outline: none;
 }
-.fullPage .right {
+.fullPage .container .right {
   background-color: #2ab2af;
   opacity: 80%;
 }
-.fullPage .right p {
-  color: #e5eff5;
+
+form {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+form input {
+  width: 300px;
+  height: 25px;
+  border-bottom: 1px solid #000000;
+}
+form p span {
+  font-style: bold;
 }
 
 /*# sourceMappingURL=App.css.map */
