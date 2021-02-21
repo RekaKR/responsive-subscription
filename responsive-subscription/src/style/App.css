@@ -22,16 +22,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
-  max-width: 700px;
+  max-width: 640px;
+  background-color: white;
   margin: auto;
   font-family: "Karla", sans-serif;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 0 5px 20px 2px #ccc;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 5px #d9d9e2;
 }
 .fullPage h2 {
   color: #2ab2af;
   font-weight: 700;
+  padding-bottom: 30px;
 }
 .fullPage h3 {
   color: #c0df34;
@@ -48,10 +49,11 @@ body {
   padding: 40px;
 }
 .fullPage .subscription {
+  height: 220px;
   color: #98a6bd;
 }
 .fullPage .container {
-  height: 300px;
+  height: 260px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -60,11 +62,15 @@ body {
   width: 50%;
   background-color: #2ab2af;
 }
+.fullPage .container .left {
+  border-bottom-left-radius: 10px;
+}
 .fullPage .container .left button {
   background-color: #c0df34;
   outline: none;
 }
 .fullPage .container .right {
+  border-bottom-right-radius: 10px;
   opacity: 80%;
 }
 

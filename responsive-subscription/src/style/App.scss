@@ -11,16 +11,17 @@ body {
 
   width: 85%;
   //width: 100%;
-  max-width: 700px;
+  max-width: 640px;
+  background-color: white;
   margin: auto;
   font-family: 'Karla', sans-serif;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 0 5px 20px 2px #ccc;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 5px #d9d9e2;
 
   h2 {
     color: $sideBackgroundC;
     font-weight: 700;
+    padding-bottom: 30px;
   }
 
   h3 {
@@ -41,11 +42,12 @@ body {
   }
 
   .subscription {
+    height: 220px;
     color: $gBlue;
   }
 
   .container {
-    height: 300px;
+    height: 260px;
     display: flex;
     flex-wrap: wrap;
 
@@ -56,6 +58,8 @@ body {
   }
 
   .left {
+    border-bottom-left-radius: 10px;
+
     button {
       background-color: $buttonC;
       outline: none;
@@ -63,6 +67,7 @@ body {
   }
   
   .right {
+    border-bottom-right-radius: 10px;
     opacity: 80%;
   }
  }
