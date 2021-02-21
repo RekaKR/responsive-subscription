@@ -12,16 +12,22 @@ input {
   border: none;
 }
 
+body {
+  background-color: #E8F5F2;
+}
+
 .fullPage {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
   font-family: "Karla", sans-serif;
   border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px 2px #ccc;
 }
 .fullPage h2 {
   color: #2ab2af;
