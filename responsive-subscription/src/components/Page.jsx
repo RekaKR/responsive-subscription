@@ -1,4 +1,5 @@
 import React from 'react';
+import LeftSide from './LeftSide';
 import Subscription from './Subscription';
 
 function Page() {
@@ -7,14 +8,7 @@ function Page() {
       <Subscription />
 
       <div className="container">
-        <div className="left">
-          <h2>Monthly Subscription</h2>
-          <div className="numbText">
-            <p id="bigger">$29</p>
-          </div>
-          <p>Full access for less than $1 a day</p>
-          <button>Sign Up</button>
-        </div>
+        <LeftSide />
 
         <div className="right">
           <h2>Why Us</h2>
