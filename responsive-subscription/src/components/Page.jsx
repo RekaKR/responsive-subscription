@@ -1,14 +1,10 @@
 import React from 'react';
+import Subscription from './Subscription';
 
 function Page() {
   return (
     <div className="fullPage">
-      <div className="subscription">
-        <h1>Join our community</h1>
-        <h2>30-day, hassle-free money back guarantee</h2>
-        <p>Gain access to our full library of tutorials along with expert code reviews.</p>
-        <p>Perfect for any developers who are serious about honing their skills.</p>
-      </div>
+      <Subscription />
 
       <div className="container">
         <div className="left">
