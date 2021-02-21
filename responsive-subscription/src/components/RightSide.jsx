@@ -3,7 +3,7 @@ import React from 'react'
 function RightSide() {
   return (
     <div className="right">
-      <h2>Why Us</h2>
+      <h3>Why Us</h3>
       <p>Tutorials by industry experts</p>
       <p>Peer & expert code review</p>
       <p>Coding exercises</p>

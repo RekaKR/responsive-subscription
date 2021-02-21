@@ -14,9 +14,12 @@ function Page() {
         <RightSide />
       </div>
 
-      <SignUpForm />
+      {/*<SignUpForm />*/}
     </div>
   );
 }
 
 export default Page;
+
+
+

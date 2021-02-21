@@ -1,18 +1,22 @@
-@use 'variables' as *;
 @use 'reset';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 .fullPage {
+  @include FixedMiddle;
+  
   width: 85%;
-  max-width: 1440px;
+  max-width: 800px;
   margin: auto;
   font-family: 'Karla', sans-serif;
+  border: 1px solid black;
 
-  h1 {
+  h2 {
     color: $sideBackgroundC;
     font-weight: 700;
   }
 
-  h2 {
+  h3 {
     color: $buttonC;
     font-weight: 700;
   }
@@ -23,17 +27,28 @@
     font-size: 16px;
   }
 
+  .subscription,
+  .left,
+  .right {
+    padding: 40px;
+  }
+
   .subscription {
     color: $gBlue;
   }
 
- .container {
-//   display: flex;
-//   flex-wrap: wrap;
+  .container {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+  .left,
+  .right {
+    width: 50%;
+    background-color: $sideBackgroundC;
+  }
 
   .left {
-    background-color: $sideBackgroundC;
-    
     button {
       background-color: $buttonC;
       outline: none;
@@ -41,7 +56,6 @@
   }
   
   .right {
-    background-color: $sideBackgroundC;
     opacity: 80%;
   }
  }

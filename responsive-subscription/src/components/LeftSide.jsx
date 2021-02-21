@@ -3,7 +3,7 @@ import React from 'react'
 function LeftSide() {
   return (
     <div className="left">
-      <h2>Monthly Subscription</h2>
+      <h3>Monthly Subscription</h3>
       <div className="numbText">
         <p id="bigger">$29</p>
       </div>

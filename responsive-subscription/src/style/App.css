@@ -13,16 +13,21 @@ input {
 }
 
 .fullPage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 85%;
-  max-width: 1440px;
+  max-width: 800px;
   margin: auto;
   font-family: "Karla", sans-serif;
+  border: 1px solid black;
 }
-.fullPage h1 {
+.fullPage h2 {
   color: #2ab2af;
   font-weight: 700;
 }
-.fullPage h2 {
+.fullPage h3 {
   color: #c0df34;
   font-weight: 700;
 }
@@ -31,10 +36,22 @@ input {
   font-weight: 400;
   font-size: 16px;
 }
+.fullPage .subscription,
+.fullPage .left,
+.fullPage .right {
+  padding: 40px;
+}
 .fullPage .subscription {
   color: #98a6bd;
 }
-.fullPage .container .left {
+.fullPage .container {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fullPage .container .left,
+.fullPage .container .right {
+  width: 50%;
   background-color: #2ab2af;
 }
 .fullPage .container .left button {
@@ -42,7 +59,6 @@ input {
   outline: none;
 }
 .fullPage .container .right {
-  background-color: #2ab2af;
   opacity: 80%;
 }
 
