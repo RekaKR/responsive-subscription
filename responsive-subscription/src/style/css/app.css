@@ -33,6 +33,7 @@ input {
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 10px 20px 5px #d9d9e2;
+  z-index: -100;
 }
 .containerForm h2 {
   color: #2ab2af;
@@ -89,7 +90,7 @@ input {
 }
 
 .displBlock {
-  display: block;
+  z-index: 100;
 }
 
 body {

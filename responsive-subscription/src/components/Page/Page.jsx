@@ -4,20 +4,10 @@ import LeftSide from '../LeftSide/LeftSide';
 import RightSide from '../RightSide/RightSide';
 import SignUpForm from '../SignUpForm/SignUpForm';
 
-/*
-const form = document.querySelector('.containerForm');
-const fullPage = document.querySelector('.fullPage');
-
 function addClass() {
-  //  form.classList.add('displBlock');
+  const fullPage = document.querySelector('.fullPage');
   fullPage.classList.add('displNone');
 }
-
-function removeClass() {
-  //  form.classList.remove('displBlock');
-  fullPage.classList.remove('displNone');
-}
-*/
 
 function Page() {
   return (
@@ -26,7 +16,7 @@ function Page() {
         <Subscription />
 
         <div className="container">
-          <LeftSide />
+          <LeftSide click={() => addClass()} />
           <RightSide />
         </div>
       </div>

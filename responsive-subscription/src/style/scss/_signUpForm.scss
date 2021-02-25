@@ -13,8 +13,8 @@
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 10px 20px 5px #d9d9e2;
-  //display: none;
-  
+  z-index: -100;
+
   h2 {
     color: $sideBackgroundC;
     padding-bottom: 25px;
@@ -76,5 +76,5 @@
 
 //JS triggered
 .displBlock {
-  display: block;
+  z-index: 100;
 }

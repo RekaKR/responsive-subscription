@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function SignUpForm() {
+function SignUpForm(props) {
   const [nameValue, setNameValue] = useState();
   const [birthValue, setBirthValue] = useState();
   const [addressValue, setAddressValue] = useState();
