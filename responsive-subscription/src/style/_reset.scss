@@ -5,9 +5,16 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
 }
 
 input {
   background: transparent;
   border: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

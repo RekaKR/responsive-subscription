@@ -3,7 +3,7 @@
 @use 'mixins' as *;
 
 body {
-  background-color: #E8F5F2;
+  background-color: $backgroundC;
 }
 
 .fullPage {
@@ -20,57 +20,108 @@ body {
 
   h2 {
     color: $sideBackgroundC;
+    padding-bottom: 25px;
     font-weight: 700;
-    padding-bottom: 30px;
+    font-size: 25px;
+    letter-spacing: -1px;
   }
 
   h3 {
-    color: $buttonC;
     font-weight: 700;
-  }
-
-  p {
-    color: $lightGray;
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  .subscription,
-  .left,
-  .right {
-    padding: 40px;
+    font-size: 18px;
   }
 
   .subscription {
     height: 220px;
     color: $gBlue;
+    padding: 40px;
+
+    h3 {
+      color: $buttonC;
+      padding-bottom: 10px;
+    }
+    
+    p {
+      line-height: 1.7;
+    }
   }
 
   .container {
-    height: 260px;
+//    height: 240px;
     display: flex;
     flex-wrap: wrap;
 
-  .left,
-  .right {
-    width: 50%;
-    background-color: $sideBackgroundC;
-  }
+    h3 {
+      color: $lightGray;
+      font-weight: 400;
+      font-size: 19px;
+    }
 
-  .left {
-    border-bottom-left-radius: 10px;
+    p {
+      color: $lightGray07;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
+    }
 
-    button {
-      background-color: $buttonC;
-      outline: none;
+    .left,
+    .right {
+      width: 50%;
+      padding: 40px;
+    }
+
+    .left {
+      background-color: $sideBackgroundC;
+      border-bottom-left-radius: 10px;
+
+      h3 {
+        padding-bottom: 14px;
+      }
+
+      #bigger {
+        color: $lightGray;
+        font-weight: 700;
+        font-size: 32px;
+        position: relative;
+        
+        &::after {
+          content: 'per month';
+          color: $lightGrayRGBA;
+          font-weight: 400;
+          font-size: 16px;
+          padding-left: 12px;
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+
+      #per-day-line {
+        font-size: 16px;
+      }
+
+      button {
+        width: 100%;
+        color: white;
+        background-color: $buttonC;
+        margin-top: 30px;
+        padding: 15px 0;
+        font-weight: 400;
+        font-size: 16px;
+        border-radius: 5px;
+        box-shadow: 0 4px 20px -1px rgb(36, 145, 143);
+      }
+    }
+    
+    .right {
+      background-color: $sideBackgroundC08;
+      border-bottom-right-radius: 10px;
+
+      h3 {
+        padding-bottom: 18px;
+      }
     }
   }
-  
-  .right {
-    border-bottom-right-radius: 10px;
-    opacity: 80%;
-  }
- }
 }
 
 

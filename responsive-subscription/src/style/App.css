@@ -5,6 +5,7 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Karla", sans-serif;
 }
 
 input {
@@ -12,8 +13,14 @@ input {
   border: none;
 }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 body {
-  background-color: #E8F5F2;
+  background-color: #e6eff6;
 }
 
 .fullPage {
@@ -31,47 +38,90 @@ body {
 }
 .fullPage h2 {
   color: #2ab2af;
+  padding-bottom: 25px;
   font-weight: 700;
-  padding-bottom: 30px;
+  font-size: 25px;
+  letter-spacing: -1px;
 }
 .fullPage h3 {
-  color: #c0df34;
   font-weight: 700;
-}
-.fullPage p {
-  color: #e5eff5;
-  font-weight: 400;
-  font-size: 16px;
-}
-.fullPage .subscription,
-.fullPage .left,
-.fullPage .right {
-  padding: 40px;
+  font-size: 18px;
 }
 .fullPage .subscription {
   height: 220px;
   color: #98a6bd;
+  padding: 40px;
+}
+.fullPage .subscription h3 {
+  color: #c0df34;
+  padding-bottom: 10px;
+}
+.fullPage .subscription p {
+  line-height: 1.7;
 }
 .fullPage .container {
-  height: 260px;
   display: flex;
   flex-wrap: wrap;
+}
+.fullPage .container h3 {
+  color: #e5eff5;
+  font-weight: 400;
+  font-size: 19px;
+}
+.fullPage .container p {
+  color: rgba(229, 239, 245, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .fullPage .container .left,
 .fullPage .container .right {
   width: 50%;
-  background-color: #2ab2af;
+  padding: 40px;
 }
 .fullPage .container .left {
+  background-color: #2ab2af;
   border-bottom-left-radius: 10px;
 }
+.fullPage .container .left h3 {
+  padding-bottom: 14px;
+}
+.fullPage .container .left #bigger {
+  color: #e5eff5;
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+}
+.fullPage .container .left #bigger::after {
+  content: "per month";
+  color: rgba(229, 239, 245, 0.5);
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 12px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.fullPage .container .left #per-day-line {
+  font-size: 16px;
+}
 .fullPage .container .left button {
+  width: 100%;
+  color: white;
   background-color: #c0df34;
-  outline: none;
+  margin-top: 30px;
+  padding: 15px 0;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px -1px #24918f;
 }
 .fullPage .container .right {
+  background-color: rgba(42, 178, 175, 0.85);
   border-bottom-right-radius: 10px;
-  opacity: 80%;
+}
+.fullPage .container .right h3 {
+  padding-bottom: 18px;
 }
 
 form {
