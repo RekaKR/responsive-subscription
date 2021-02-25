@@ -1,21 +1,21 @@
 import React from 'react';
+import Subscription from '../Subscription/Subscription';
 import LeftSide from '../LeftSide/LeftSide';
 import RightSide from '../RightSide/RightSide';
 import SignUpForm from '../SignUpForm/SignUpForm';
-import Subscription from '../Subscription/Subscription';
 
 function Page() {
   return (
     <>
-      <div className="fullPage">
+      {/* <div className="fullPage">
         <Subscription />
 
         <div className="container">
           <LeftSide />
           <RightSide />
         </div>
-      </div>
-      {/*<SignUpForm />*/}
+      </div>*/}
+      <SignUpForm />
     </>
   );
 }

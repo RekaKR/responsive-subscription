@@ -8,8 +8,11 @@ function SignUpForm() {
         <input type="text" name="name" id="nameForm" placeholder="Name" required />
         <input type="date" name="birth" id="birthForm" required />
         <input type="text" name="address" id="addressForm" placeholder="Address" required />
-        <p>Already a member? <span>Log In</span></p>
-        <input type="submit" value="Submit" />
+        <div>
+          <p>Already a member?</p>
+          <a>Log In</a>
+        </div>
+        <input id="submit" type="submit" value="Submit" />
       </form>
     </div>
   )

@@ -142,6 +142,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 85%;
   max-width: 640px;
   background-color: white;
   margin: auto;
@@ -150,23 +151,33 @@ body {
   box-shadow: 0 10px 20px 5px #d9d9e2;
 }
 .containerForm h2 {
-  font-size: 32px;
+  color: #2ab2af;
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: -1px;
   text-align: center;
-  padding-bottom: 20px;
 }
 .containerForm form {
-  height: 150px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .containerForm form input {
   width: 300px;
   height: 25px;
+  font-size: 16px;
   border-bottom: 1px solid #000000;
 }
-.containerForm form p span {
-  font-style: bold;
+.containerForm form div {
+  display: flex;
+}
+.containerForm form div a {
+  color: #c0df34;
+  font-style: 700;
+  cursor: pointer;
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */

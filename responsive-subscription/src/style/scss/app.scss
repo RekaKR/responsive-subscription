@@ -143,7 +143,7 @@ body {
 .containerForm {
   @include FixedMiddle;
 
-  //width: 85%;
+  width: 85%;
   //width: 100%;
   max-width: 640px;
   background-color: white;
@@ -153,27 +153,37 @@ body {
   box-shadow: 0 10px 20px 5px #d9d9e2;
   
   h2 {
-    font-size: 32px;
+    color: $sideBackgroundC;
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: -1px;
     text-align: center;
-    padding-bottom: 20px;
   }
 
   form {
-    height: 150px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   
     input {
       width: 300px;
       height: 25px;
+      font-size: 16px;
       border-bottom: 1px solid #000000;
     }
-  
-    p {
-      span {
-        font-style: bold;
-      }
+
+    div {
+      display: flex;
+
+      a {
+        color: $buttonC;
+        font-style: 700;
+        cursor: pointer;
+      }  
     }
+
   }
 }
