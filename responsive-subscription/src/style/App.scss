@@ -73,6 +73,7 @@ body {
     .left {
       background-color: $sideBackgroundC;
       border-bottom-left-radius: 10px;
+      position: relative;
 
       h3 {
         padding-bottom: 14px;
@@ -110,6 +111,21 @@ body {
         font-size: 16px;
         border-radius: 5px;
         box-shadow: 0 4px 20px -1px rgb(36, 145, 143);
+
+        &::after {
+          content: "Sign up now!";
+          display: none;
+          position: absolute;
+          top: 150px;
+          left: 50%;
+          transform: translate(-50%);
+        }
+
+        &:hover {
+          &::after {
+            display: block;
+          }
+        }
       }
     }
     

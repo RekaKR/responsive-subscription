@@ -82,6 +82,7 @@ body {
 .fullPage .container .left {
   background-color: #2ab2af;
   border-bottom-left-radius: 10px;
+  position: relative;
 }
 .fullPage .container .left h3 {
   padding-bottom: 14px;
@@ -115,6 +116,17 @@ body {
   font-size: 16px;
   border-radius: 5px;
   box-shadow: 0 4px 20px -1px #24918f;
+}
+.fullPage .container .left button::after {
+  content: "Sign up now!";
+  display: none;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.fullPage .container .left button:hover::after {
+  display: block;
 }
 .fullPage .container .right {
   background-color: rgba(42, 178, 175, 0.85);
