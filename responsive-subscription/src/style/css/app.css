@@ -20,6 +20,78 @@ input {
   cursor: pointer;
 }
 
+.containerForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  min-width: 300px;
+  max-width: 640px;
+  background-color: white;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 5px #d9d9e2;
+}
+.containerForm h2 {
+  color: #2ab2af;
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+.containerForm form {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.containerForm form input {
+  font-size: 16px;
+}
+.containerForm form input[type=text],
+.containerForm form input[type=date] {
+  width: 300px;
+  height: 25px;
+  color: gray;
+  border-bottom: 1px solid #000000;
+}
+@media (max-width: 500px) {
+  .containerForm form input[type=text],
+.containerForm form input[type=date] {
+    width: 90%;
+  }
+}
+.containerForm form div {
+  width: 190px;
+  color: gray;
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+.containerForm form div a {
+  color: #c0df34;
+  font-style: 700;
+  cursor: pointer;
+}
+.containerForm form input[type=submit] {
+  width: 220px;
+  background-color: #c0df34;
+  margin-top: 5px;
+  padding: 15px 0;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px -1px #e5eff5;
+}
+
+.displBlock {
+  display: block;
+}
+
 body {
   background-color: #e6eff6;
 }
@@ -30,6 +102,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
+  min-width: 300px;
   max-width: 640px;
   background-color: white;
   margin: auto;
@@ -52,6 +125,12 @@ body {
   height: 220px;
   color: #98a6bd;
   padding: 40px;
+}
+@media (max-width: 700px) {
+  .fullPage .subscription {
+    height: auto;
+    padding: 30px;
+  }
 }
 .fullPage .subscription h3 {
   color: #c0df34;
@@ -84,6 +163,12 @@ body {
   background-color: #2ab2af;
   border-bottom-left-radius: 10px;
   position: relative;
+}
+@media (max-width: 700px) {
+  .fullPage .container .left {
+    width: 100%;
+    border-bottom-left-radius: 0;
+  }
 }
 .fullPage .container .left h3 {
   padding-bottom: 14px;
@@ -133,70 +218,19 @@ body {
   background-color: rgba(42, 178, 175, 0.85);
   border-bottom-right-radius: 10px;
 }
+@media (max-width: 700px) {
+  .fullPage .container .right {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
 .fullPage .container .right h3 {
   padding-bottom: 18px;
 }
 
-.containerForm {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 85%;
-  max-width: 640px;
-  background-color: white;
-  margin: auto;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px 5px #d9d9e2;
-}
-.containerForm h2 {
-  color: #2ab2af;
-  padding-bottom: 25px;
-  font-weight: 700;
-  font-size: 25px;
-  font-size: 30px;
-  letter-spacing: -1px;
-  text-align: center;
-}
-.containerForm form {
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.containerForm form input {
-  font-size: 16px;
-}
-.containerForm form input[type=text],
-.containerForm form input[type=date] {
-  width: 300px;
-  height: 25px;
-  color: gray;
-  border-bottom: 1px solid #000000;
-}
-.containerForm form div {
-  width: 190px;
-  color: gray;
-  margin-top: -10px;
-  display: flex;
-  justify-content: space-between;
-}
-.containerForm form div a {
-  color: #c0df34;
-  font-style: 700;
-  cursor: pointer;
-}
-.containerForm form input[type=submit] {
-  width: 220px;
-  background-color: #c0df34;
-  margin-top: 5px;
-  padding: 15px 0;
-  font-weight: 400;
-  font-size: 16px;
-  border-radius: 5px;
-  box-shadow: 0 4px 20px -1px #e5eff5;
+.displNone {
+  display: none;
 }
 
 /*# sourceMappingURL=app.css.map */
