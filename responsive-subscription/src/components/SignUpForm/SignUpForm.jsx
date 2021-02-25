@@ -10,7 +10,7 @@ function SignUpForm() {
         <input type="text" name="address" id="addressForm" placeholder="Address" required />
         <div>
           <p>Already a member?</p>
-          <a>Log In</a>
+          <a href="#">Log In</a>
         </div>
         <input id="submit" type="submit" value="Submit" />
       </form>

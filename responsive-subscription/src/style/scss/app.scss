@@ -157,6 +157,7 @@ body {
     padding-bottom: 25px;
     font-weight: 700;
     font-size: 25px;
+    font-size: 30px;
     letter-spacing: -1px;
     text-align: center;
   }
@@ -167,16 +168,25 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  
+
     input {
+      font-size: 16px;
+    }
+    
+    input[type="text"],
+    input[type="date"] {
       width: 300px;
       height: 25px;
-      font-size: 16px;
+      color: $formC;
       border-bottom: 1px solid #000000;
     }
 
     div {
+      width: 190px;
+      color: $formC;
+      margin-top: -10px;
       display: flex;
+      justify-content: space-between;
 
       a {
         color: $buttonC;
@@ -185,5 +195,15 @@ body {
       }  
     }
 
+    input[type="submit"] {
+      width: 220px;
+      background-color: $buttonC;
+      margin-top: 5px;
+      padding: 15px 0;
+      font-weight: 400;
+      font-size: 16px;
+      border-radius: 5px;
+      box-shadow: 0 4px 20px -1px $lightGray;
+    }
   }
 }
