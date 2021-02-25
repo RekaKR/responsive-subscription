@@ -13,7 +13,8 @@ input {
   border: none;
 }
 
-button {
+button,
+input {
   border: none;
   outline: none;
   cursor: pointer;
@@ -136,18 +137,35 @@ body {
   padding-bottom: 18px;
 }
 
-form {
+.containerForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 640px;
+  background-color: white;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 5px #d9d9e2;
+}
+.containerForm h2 {
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.containerForm form {
   height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-form input {
+.containerForm form input {
   width: 300px;
   height: 25px;
   border-bottom: 1px solid #000000;
 }
-form p span {
+.containerForm form p span {
   font-style: bold;
 }
 
