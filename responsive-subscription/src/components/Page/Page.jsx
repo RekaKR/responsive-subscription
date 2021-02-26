@@ -1,22 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Subscription from '../Subscription/Subscription';
 import LeftSide from '../LeftSide/LeftSide';
 import RightSide from '../RightSide/RightSide';
 import SignUpForm from '../SignUpForm/SignUpForm';
 
-function addClass() {
-  const fullPage = document.querySelector('.fullPage');
-  fullPage.classList.add('displNone');
-}
-
 function Page() {
+  const [display, setDisplay] = useState(false);
+
   return (
     <>
-      <div className="fullPage">
+      <div className={`fullPage ${display ? "displNone" : ""}`}>
         <Subscription />
 
         <div className="container">
-          <LeftSide click={() => addClass()} />
+          <LeftSide click={() => setDisplay((state) => !state)} />
           <RightSide />
         </div>
       </div>
